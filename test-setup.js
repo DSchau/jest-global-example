@@ -1,6 +1,6 @@
 let database
 
-module.exports = function setup() {
+module.exports = async function setup() {
   if (!database) {
     database = function() {} // some heavy init code
   }

@@ -1,7 +1,7 @@
 const setup = require('../test-setup')
 
 let database
-beforeAll(() => database = setup())
+beforeAll(async () => database = await setup())
 
 test(`it does something`, () => {
   const result = database()
